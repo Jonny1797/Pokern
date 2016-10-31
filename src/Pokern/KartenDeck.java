@@ -3,7 +3,7 @@ import handChecker.PokerCard;
 import java.util.ArrayList;
 
 public class KartenDeck {
-    ArrayList<Karte> Deck = new ArrayList<>();
+    static ArrayList<Karte> Deck = new ArrayList<>();
 
     public void erstelleEinDeck() {
         for (PokerCard.Value value : PokerCard.Value.values()) {
@@ -14,7 +14,7 @@ public class KartenDeck {
     }
 
     public void mischeDasDeck() {
-        for(int i = 1; i < 1000; ++i) {
+        for(int i = 1; i < (((int) Math.random() * 53) + 270); ++i) {
             int zufallsZahl = (int) (Math.random() * Deck.size());
             Karte tempKarte = Deck.get(zufallsZahl);
             Deck.remove(zufallsZahl);
@@ -22,7 +22,7 @@ public class KartenDeck {
         }
     }
 
-    public Karte getKarte(){
+    public static Karte getKarte(){
         Karte tempKarte = Deck.get(0);
         Deck.remove(0);
         return tempKarte;
