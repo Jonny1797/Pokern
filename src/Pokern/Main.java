@@ -4,8 +4,8 @@ package Pokern;
 public class Main {
 	public static void main(String[] args) {
 		//Erstelle Spieler
-		Spieler Eberhart = new Spieler("Eberhard", 500);
-		Spieler Guenther = new Spieler("Guenther", 500);
+		Spieler Eberhart = new Spieler("Eberhard", 1500);
+		Spieler Guenther = new Spieler("Guenther", 1500);
 		//Erstelle einen Tisch und ein Kartendeck
 		Tisch tisch = new Tisch();
 		KartenDeck deck = new KartenDeck();
@@ -17,9 +17,10 @@ public class Main {
 		deck.mischeDasDeck();
 		//Setze den BigBlind und Dealer
 		tisch.setBigBlind(200);
-		tisch.setzeDealer();
-		if(tisch.howManyPlayers()<= 2){
-
+		tisch.setDealer();
+		if(tisch.howManyPlayers() > 2){
+			//entweder definiert man einfach die Blinds über den Dealer
+			//oder wir machen dafür auch noch Variablen!?
 		}
 		//Die Spieler bekommen Karten
 		tisch.givePlayerCards();
