@@ -15,6 +15,8 @@ public class Spieler {
 		this.name = Name;
 		this.geld = Geld;
 	}
+
+	public Spieler(){}
 	
 	public void bekommeGeld(long Gewinn){
 		geld = geld + Gewinn;
@@ -30,5 +32,9 @@ public class Spieler {
 	
 	public String nameVomSpieler(){
 		return name;
+	}
+
+	public long setGeld(long geld){
+		return geld;
 	}
 }

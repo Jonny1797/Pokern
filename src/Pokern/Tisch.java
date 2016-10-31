@@ -1,4 +1,5 @@
 package Pokern;
+
 import java.util.ArrayList;
 import java.util.ListIterator;
 
@@ -7,13 +8,20 @@ public class Tisch {
     ListIterator<Spieler> listIterator = mitSpieler.listIterator();
     //Oder wir machen hierfür noch einen Konstruktor, der nix erwartet?
     //Oder alles ganz anders? ^^
-    Spieler dealer = new Spieler("Dealer", 0);
-    int dealerIndex = -1;
-    int bigBlind;
+    Spieler dealer = new Spieler();
+    Spieler bigBlind = new Spieler();
+    Spieler smallBlind = new Spieler();
+//  int dealerIndex = -1;
+    int bBlindValue;
+    long pod;
 
 
 	public void setDealer() {
+        //Man muss auch noch abprüfuen, ob es überhaupt ein nächstes Element gibt
         dealer = mitSpieler.get((int) Math.random() % mitSpieler.size());
+        smallBlind = listIterator.next();
+        //nicht so sicher hier
+        bigBlind = listIterator.next();
     }
 
     public void nextDealer(){
@@ -36,12 +44,12 @@ public class Tisch {
         return mitSpieler.size();
     }
 
-    public int getBigBlind(){
-        return bigBlind;
+    public int getbBlindValue(){
+        return bBlindValue;
     }
 
-    public void setBigBlind(int bigBlind){
-        this.bigBlind = bigBlind;
+    public void setbBlindValue(int bBlindValue){
+        this.bBlindValue = bBlindValue;
     }
 
     public void givePlayerCards (){

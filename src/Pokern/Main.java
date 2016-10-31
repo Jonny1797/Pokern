@@ -16,12 +16,13 @@ public class Main {
 		deck.erstelleEinDeck();
 		deck.mischeDasDeck();
 		//Setze den BigBlind und Dealer
-		tisch.setBigBlind(200);
+		tisch.setbBlindValue(200);
 		tisch.setDealer();
 		if(tisch.howManyPlayers() > 2){
 			//entweder definiert man einfach die Blinds über den Dealer
 			//oder wir machen dafür auch noch Variablen!?
 		}
+		tisch.nextDealer().geld = tisch.bBlindValue /2;
 		//Die Spieler bekommen Karten
 		tisch.givePlayerCards();
 	}
