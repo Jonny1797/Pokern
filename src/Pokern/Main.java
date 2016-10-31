@@ -8,7 +8,7 @@ public class Main {
 		Tisch tisch = new Tisch();
 		tisch.fuegeSpielerHinzu(Eberhart);
 		tisch.fuegeSpielerHinzu(Guenther);
-
+		//whats that?
 
 	}
 }
