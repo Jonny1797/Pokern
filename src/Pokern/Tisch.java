@@ -3,23 +3,29 @@ import java.util.ArrayList;
 
 public class Tisch {
 	ArrayList<Spieler> mitSpieler = new ArrayList<>();
+    //Oder wir machen hierfür noch einen Konstruktor, der nix erwartet?
+    //Oder alles ganz anders? ^^
+    Spieler dealer = new Spieler("Dealer", 0);
     int dealerIndex = -1;
     int bigBlind;
 
 
 	public void setzeDealer(){
-	    if(dealerIndex < 0){
-            dealerIndex = (int) (Math.random() * mitSpieler.size());
-        }else{
-            dealerIndex++;
-            if(dealerIndex > mitSpieler.size()){
-                dealerIndex = 0;
-            }
+        for(int i=0; i<Math.random();i++) {
+            dealer = mitSpieler.get(i);
         }
+//	    if(dealerIndex < 0){
+//            dealerIndex = (int) (Math.random() * mitSpieler.size());
+//        }else{
+//            dealerIndex++;
+//            if(dealerIndex > mitSpieler.size()){
+//                dealerIndex = 0;
+//            }
+//        }
     }
 
     public Spieler whoIsDealer(){
-        return ;
+        return dealer;
     }
 
 	public void fuegeSpielerHinzu(Spieler s){
