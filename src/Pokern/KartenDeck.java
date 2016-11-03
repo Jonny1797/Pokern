@@ -15,7 +15,7 @@ public class KartenDeck {
 
     public void mischeDasDeck() {
         for(int i = 1; i < (((int) Math.random() * 53) + 270); ++i) {
-            int zufallsZahl = (int) (Math.random() * Deck.size());
+            int zufallsZahl = (int) (Math.random() * (Deck.size()-1));
             Karte tempKarte = Deck.get(zufallsZahl);
             Deck.remove(zufallsZahl);
             Deck.add(tempKarte);

@@ -22,7 +22,7 @@ public class Main {
 			//entweder definiert man einfach die Blinds über den Dealer
 			//oder wir machen dafür auch noch Variablen!?
 		}
-		tisch.nextDealer().geld = tisch.bBlindValue /2;
+//		tisch.nextDealer().geld = tisch.bBlindValue /2;
 		//Die Spieler bekommen Karten
 		tisch.givePlayerCards();
 	}

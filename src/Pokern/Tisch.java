@@ -1,36 +1,40 @@
 package Pokern;
 
 import java.util.ArrayList;
-import java.util.ListIterator;
+//import java.util.ListIterator;
 
 public class Tisch {
 	ArrayList<Spieler> mitSpieler = new ArrayList<>();
-    ListIterator<Spieler> listIterator = mitSpieler.listIterator();
+//    ListIterator<Spieler> listIterator = mitSpieler.listIterator();
     //Oder wir machen hierfür noch einen Konstruktor, der nix erwartet?
     //Oder alles ganz anders? ^^
-    Spieler dealer = new Spieler();
-    Spieler bigBlind = new Spieler();
-    Spieler smallBlind = new Spieler();
-//  int dealerIndex = -1;
+//    Spieler dealer = new Spieler();
+//    Spieler bigBlind = new Spieler();
+//    Spieler smallBlind = new Spieler();
+    int dealerIndex = -1;
     int bBlindValue;
     long pod;
 
 
 	public void setDealer() {
-        //Man muss auch noch abprüfuen, ob es überhaupt ein nächstes Element gibt
-        dealer = mitSpieler.get((int) Math.random() % mitSpieler.size());
-        smallBlind = listIterator.next();
-        //nicht so sicher hier
-        bigBlind = listIterator.next();
+//        //Man muss auch noch abprüfuen, ob es überhaupt ein nächstes Element gibt
+//        dealer = mitSpieler.get((int) Math.random() % mitSpieler.size());
+//        smallBlind = listIterator.next();
+//        //nicht so sicher hier
+//        bigBlind = listIterator.next();
+        dealerIndex = (int) (Math.random() * (mitSpieler.size()-1));//nicht %?
     }
 
     public void nextDealer(){
-        dealer = listIterator.next();
+        dealerIndex++;
+        if(dealerIndex > mitSpieler.size()){
+            dealerIndex = 0;
+        }
     }
 
-    public Spieler getDealer(){
-        return dealer;
-    }
+//    public Spieler getDealer(){
+//        return dealer;
+//    }
 
 	public void fuegeSpielerHinzu(Spieler s){
 	    mitSpieler.add(s);
