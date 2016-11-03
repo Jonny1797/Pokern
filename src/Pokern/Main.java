@@ -18,6 +18,7 @@ public class Main {
 		//Setze den BigBlind und Dealer
 		tisch.setbBlindValue(200);
 		tisch.setDealer();
+		//what ever
 		if(tisch.howManyPlayers() > 2){
 			//entweder definiert man einfach die Blinds über den Dealer
 			//oder wir machen dafür auch noch Variablen!?
