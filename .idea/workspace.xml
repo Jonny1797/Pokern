@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a24660e8-98aa-4d9e-aca1-cd6702ac6f48" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Pokern/Tisch.java" afterPath="$PROJECT_DIR$/src/Pokern/Tisch.java" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,21 +66,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Pokern/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
-              <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+              <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tisch.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Tisch.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Pokern/Tisch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+            <state relative-caret-position="680">
+              <caret line="50" column="1" lean-forward="true" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -102,8 +103,8 @@
         <option value="$PROJECT_DIR$/src/Pokern/Spieler.java" />
         <option value="$PROJECT_DIR$/src/Pokern/Karte.java" />
         <option value="$PROJECT_DIR$/src/Pokern/KartenDeck.java" />
-        <option value="$PROJECT_DIR$/src/Pokern/Tisch.java" />
         <option value="$PROJECT_DIR$/src/Pokern/Main.java" />
+        <option value="$PROJECT_DIR$/src/Pokern/Tisch.java" />
       </list>
     </option>
   </component>
@@ -514,7 +515,21 @@
       <option name="project" value="LOCAL" />
       <updated>1478191079899</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Rejected commit: Default">
+      <created>1478191439691</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1478191439691</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Rejected commit: Defaultvccbvcvbcvcbvcbvcbv">
+      <created>1478191579713</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1478191579713</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView">
@@ -573,7 +588,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Rejected commit: Default" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rejected commit: Default" />
+    <MESSAGE value="Rejected commit: Defaultvccbvcvbcvcbvcbvcbv" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rejected commit: Defaultvccbvcvbcvcbvcbvcbv" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1053,18 +1069,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Pokern/Tisch.java">
+    <entry file="file://$PROJECT_DIR$/src/Pokern/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        <state relative-caret-position="34">
+          <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Pokern/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/Pokern/Tisch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        <state relative-caret-position="680">
+          <caret line="50" column="1" lean-forward="true" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
           <folding />
         </state>
       </provider>

@@ -18,9 +18,9 @@ public class Tisch {
         }
     }
 
-    public Spieler whoIsDealer(){
-        return ;
-    }
+    //public Spieler whoIsDealer(){
+    //    return ;
+    //}
 
 	public void fuegeSpielerHinzu(Spieler s){
 	    mitSpieler.add(s);
