@@ -1,6 +1,6 @@
 package Pokern;
 
-//DU MONK DU GEORG
+//DU MONK DU GEORG blabla
 
 public class Main {
 	public static void main(String[] args) {
