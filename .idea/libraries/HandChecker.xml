@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="HandChecker">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/HandChecker.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/HandChecker.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

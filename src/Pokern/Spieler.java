@@ -4,6 +4,7 @@ import java.util.ArrayList;
 public class Spieler {
 	String name;
 	long geld;
+	boolean isAllIn = false;
 	ArrayList<Karte> handKarten = new ArrayList<>();
 
 	public Spieler(String Name/*, long Geld*/){
@@ -19,7 +20,7 @@ public class Spieler {
 	//ENDE_KARTEN#######################################################################################################
 
 	//SPIELER###########################################################################################################
-	public String nameVomSpieler(){
+	public String getSpielerName(){
 		return name;
 	}
 	//ENDE_SPIELER######################################################################################################
@@ -41,4 +42,18 @@ public class Spieler {
 		return geld;
 	}
 	//ENDE_GELD#########################################################################################################
+
+	//ALLIN#############################################################################################################
+	public void setAllInZuIstAllIn(){
+		isAllIn = true;
+	}
+	//allin-------------------------------------------------------------------------------------------------------------
+	public  void setAllInZuIstNichtAllIn(){
+		isAllIn = false;
+	}
+	//allin-------------------------------------------------------------------------------------------------------------
+	public boolean getIsAllIn(){
+		return isAllIn;
+	}
+	//ENDE_ALLIN########################################################################################################
 }

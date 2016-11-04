@@ -23,7 +23,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="HandChecker" level="project" />
     <orderEntry type="library" name="HandChecker1" level="project" />
+    <orderEntry type="library" name="HandChecker" level="project" />
   </component>
 </module>
