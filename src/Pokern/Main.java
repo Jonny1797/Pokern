@@ -24,7 +24,7 @@ public class Main {
 		}
 		//Die Spieler bekommen Karten
 
-		//crash die MAIN >:D
+		//crash die MAIN >:Dddddddddddddddddddddddddddddddddddduuuuuu
 		tisch.givePlayerCards();
 	}
 }
