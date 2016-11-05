@@ -1,14 +1,9 @@
 package Pokern;
 
 import java.util.ArrayList;
-//import java.util.ListIterator;
 
 public class Tisch implements Runnable{
     ArrayList<Spieler> mitSpieler = new ArrayList<>();
-    //ListIterator<Spieler> listIterator = mitSpieler.listIterator();
-    //Oder wir machen hierfür noch einen Konstruktor, der nix erwartet?
-    //Oder alles ganz anders? ^^
-    //ich glaube nicht
 
     long startGeld = 5000;
 
