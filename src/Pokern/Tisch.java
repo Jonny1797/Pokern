@@ -9,11 +9,11 @@ public class Tisch implements Runnable{
 
     int[] smallBlindList = {100, 200, 400, 500, 1000, 2000, 4000, 5000};
     int smallBlindListIndex = 0;
-    int currentSmallBlind;
+    int currentSmallBlindValue;
 
-    int dealerIndex;
-    int smallBlindIndex;
-    int bigBlindIndex;
+    int dealerSpielerIndex;
+    int smallBlindSpielerIndex;
+    int bigBlindSpielerIndex;
     int currentSpielerIndex;
     long pod;
 
@@ -40,7 +40,7 @@ public class Tisch implements Runnable{
         deck.mischeDasDeck();
 
         //Setze den SmallBlind
-        currentSmallBlind = getSmallBlindValue();
+        currentSmallBlindValue = getSmallBlindValue();
 
         //Setzte den Dealer
         setDealer();
@@ -49,30 +49,30 @@ public class Tisch implements Runnable{
             System.out.println("Mehr als 2 Spieler");
 
             nextDealer();
-            setSmallBlindIndex();
-            setBigBlindIndex();
+            setSmallBlindSpielerIndex();
+            setBigBlindSpielerIndex();
 
             //SmallBlind wird hinzugefügt
-            if(mitSpieler.get(smallBlindIndex).wieVielGeld() < getSmallBlindValue()){
-                long allInValue = mitSpieler.get(bigBlindIndex).wieVielGeld();
-                mitSpieler.get(smallBlindIndex).setAllInZuIstAllIn();                                                   //Spieler wird All-in gesetzt
-                mitSpieler.get(smallBlindIndex).verliereGeld(allInValue);                                               //All-in Betrag wird dem Spieler abgezogen
+            if(mitSpieler.get(smallBlindSpielerIndex).wieVielGeld() < getSmallBlindValue()){
+                long allInValue = mitSpieler.get(smallBlindSpielerIndex).wieVielGeld();
+                mitSpieler.get(smallBlindSpielerIndex).setAllInZuIstAllIn();                                                   //Spieler wird All-in gesetzt
+                mitSpieler.get(smallBlindSpielerIndex).verliereGeld(allInValue);                                               //All-in Betrag wird dem Spieler abgezogen
                 pod = pod + allInValue;                                                                                 //All-in Betrag wird dem Pod hinzugefügt
-                System.out.println(mitSpieler.get(smallBlindIndex).getSpielerName() + " ist All-in mit: " + allInValue);
+                System.out.println(mitSpieler.get(smallBlindSpielerIndex).getSpielerName() + " ist All-in mit: " + allInValue);
             }else{
-                mitSpieler.get(smallBlindIndex).verliereGeld(getSmallBlindValue());
+                mitSpieler.get(smallBlindSpielerIndex).verliereGeld(getSmallBlindValue());
                 pod = pod + getSmallBlindValue();
             }
 
             //BigBlind wird hinzugefügt
-            if(mitSpieler.get(bigBlindIndex).wieVielGeld() < getSmallBlindValue()){
-                long allInValue = 2 * mitSpieler.get(bigBlindIndex).wieVielGeld();
-                mitSpieler.get(bigBlindIndex).setAllInZuIstAllIn();                                                     //Spieler wird All-in gesetzt
-                mitSpieler.get(bigBlindIndex).verliereGeld(allInValue);                                                 //All-in Betrag wird dem Spieler abgezogen
+            if(mitSpieler.get(bigBlindSpielerIndex).wieVielGeld() < getSmallBlindValue()){
+                long allInValue = 2 * mitSpieler.get(bigBlindSpielerIndex).wieVielGeld();
+                mitSpieler.get(bigBlindSpielerIndex).setAllInZuIstAllIn();                                                     //Spieler wird All-in gesetzt
+                mitSpieler.get(bigBlindSpielerIndex).verliereGeld(allInValue);                                                 //All-in Betrag wird dem Spieler abgezogen
                 pod = pod + allInValue;                                                                                 //All-in Betrag wird dem Pod hinzugefügt
-                System.out.println(mitSpieler.get(bigBlindIndex).getSpielerName() + " ist All-in mit: " + allInValue);
+                System.out.println(mitSpieler.get(bigBlindSpielerIndex).getSpielerName() + " ist All-in mit: " + allInValue);
             }else{
-                mitSpieler.get(bigBlindIndex).verliereGeld(2 * getSmallBlindValue());
+                mitSpieler.get(bigBlindSpielerIndex).verliereGeld(2 * getSmallBlindValue());
                 pod = pod + (2 * getSmallBlindValue());
             }
             gebeSpielerKarten();
@@ -98,52 +98,26 @@ public class Tisch implements Runnable{
 
     //DEALER############################################################################################################
     public void setDealer(){
-        dealerIndex = (int) (Math.random() * (mitSpieler.size()-1));
+        dealerSpielerIndex = (int) (Math.random() * (mitSpieler.size()-1));
     }
     //dealer------------------------------------------------------------------------------------------------------------
     public void nextDealer(){
-        dealerIndex++;
-        if(dealerIndex >= mitSpieler.size()){
-            dealerIndex = 0;
+        dealerSpielerIndex++;
+        if(dealerSpielerIndex >= mitSpieler.size()){
+            dealerSpielerIndex = 0;
         }
     }
     //dealer------------------------------------------------------------------------------------------------------------
     public Spieler getDealer(){
-        return mitSpieler.get(dealerIndex);
+        return mitSpieler.get(dealerSpielerIndex);
     }
     //ENDE_DEALER#######################################################################################################
 
-    public void setSmallBlindIndex(){
-        if(mitSpieler.size() > 2){
-            smallBlindIndex = dealerIndex + 1;
-            if(smallBlindIndex >= mitSpieler.size()){
-                smallBlindIndex = smallBlindIndex - mitSpieler.size();
-            }
-        }else{
-            smallBlindIndex = dealerIndex;
-        }
-
-    }
-
-    public void setBigBlindIndex(){
-       if(mitSpieler.size() > 2){
-           bigBlindIndex = dealerIndex + 2;
-           if(bigBlindIndex >= mitSpieler.size()){
-               bigBlindIndex = bigBlindIndex - mitSpieler.size();
-           }
-       }else{
-           if(dealerIndex == 0){
-               bigBlindIndex = 1;
-           }else{
-               bigBlindIndex = 0;
-           }
-       }
-
-    }
 
 
     //Spieler###########################################################################################################
     public Spieler nextSpieler(){
+        currentSpielerIndex++;
         return mitSpieler.get(currentSpielerIndex);
     }
     //spieler-----------------------------------------------------------------------------------------------------------
@@ -157,6 +131,32 @@ public class Tisch implements Runnable{
     //spieler-----------------------------------------------------------------------------------------------------------
     public int wieVielerSpieler(){
         return mitSpieler.size();
+    }
+    //spieler-----------------------------------------------------------------------------------------------------------
+    public void setSmallBlindSpielerIndex(){
+        if(mitSpieler.size() > 2){
+            smallBlindSpielerIndex = dealerSpielerIndex + 1;
+            if(smallBlindSpielerIndex >= mitSpieler.size()){
+                smallBlindSpielerIndex = smallBlindSpielerIndex - mitSpieler.size();
+            }
+        }else{
+            smallBlindSpielerIndex = dealerSpielerIndex;
+        }
+    }
+    //spieler-----------------------------------------------------------------------------------------------------------
+    public void setBigBlindSpielerIndex(){
+        if(mitSpieler.size() > 2){
+            bigBlindSpielerIndex = dealerSpielerIndex + 2;
+            if(bigBlindSpielerIndex >= mitSpieler.size()){
+                bigBlindSpielerIndex = bigBlindSpielerIndex - mitSpieler.size();
+            }
+        }else{
+            if(dealerSpielerIndex == 0){
+                bigBlindSpielerIndex = 1;
+            }else{
+                bigBlindSpielerIndex = 0;
+            }
+        }
     }
     //END_SPIELER#######################################################################################################
 
