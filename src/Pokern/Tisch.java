@@ -7,7 +7,7 @@ public class Tisch implements Runnable{
 
     long startGeld = 5000;
 
-    int[] sBlindList = {100, 200, 400, 500, 1000, 2000, 4000, 5000};
+    int[] sBlindList = {100, 150, 200, 400, 500, 1000, 2000, 4000, 5000};
     int sBlindIndex = 0;
     int currentSmallBlind;
 

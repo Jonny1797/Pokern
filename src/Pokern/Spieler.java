@@ -7,9 +7,9 @@ public class Spieler {
 	boolean isAllIn = false;
 	ArrayList<Karte> handKarten = new ArrayList<>();
 
-	public Spieler(String Name/*, long Geld*/){
+	public Spieler(String Name/*, long geld*/){
 		this.name = Name;
-		//this.geld = Geld;
+		//this.geld = geld;
 	}
 	public Spieler(){}
 
