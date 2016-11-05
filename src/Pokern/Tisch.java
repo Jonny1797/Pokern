@@ -12,15 +12,14 @@ public class Tisch implements Runnable{
 
     long startGeld = 5000;
 
-    int[] sBlindList = {100, 200, 400, 500, 1000, 2000, 4000, 5000};
-    int sBlindIndex = 0;
+    int[] smallBlindList = {100, 200, 400, 500, 1000, 2000, 4000, 5000};
+    int smallBlindListIndex = 0;
     int currentSmallBlind;
 
     int dealerIndex;
     int smallBlindIndex;
     int bigBlindIndex;
-    int smallBlindValue;
-    int currentSpieler;
+    int currentSpielerIndex;
     long pod;
 
     @Override public void run(){
@@ -150,7 +149,7 @@ public class Tisch implements Runnable{
 
     //Spieler###########################################################################################################
     public Spieler nextSpieler(){
-        return mitSpieler.get(currentSpieler);
+        return mitSpieler.get(currentSpielerIndex);
     }
     //spieler-----------------------------------------------------------------------------------------------------------
     public void fuegeSpielerHinzu(Spieler s){
@@ -180,14 +179,14 @@ public class Tisch implements Runnable{
 
     //BLINDS############################################################################################################
     private int getSmallBlindValue(){
-        return sBlindList[sBlindIndex];
+        return smallBlindList[smallBlindListIndex];
     }
     //blind-------------------------------------------------------------------------------------------------------------
     private long setNextSmallBlind(){
-        if(sBlindIndex++ <= sBlindList.length){
-            return sBlindIndex++;
+        if(smallBlindListIndex++ <= smallBlindList.length){
+            return smallBlindListIndex++;
         }else{
-            return sBlindIndex;
+            return smallBlindListIndex;
         }
     }
     //ENDE_BLINDS#######################################################################################################
