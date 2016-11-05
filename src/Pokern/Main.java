@@ -1,7 +1,5 @@
 package Pokern;
 
-//DU MONK DU GEORG blabla
-
 import java.time.Clock;
 
 public class Main {
