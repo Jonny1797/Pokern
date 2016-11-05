@@ -42,7 +42,7 @@ public class Main {
 //			//Letzter Spieler hat gewonnen!!!
 //
 //		}
-		System.out.println("Ende vom Main");
+		System.out.println("Ende der Main");
 	}
 //
 //	public long getStartGeld(){
