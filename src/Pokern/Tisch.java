@@ -46,36 +46,21 @@ public class Tisch implements Runnable{
         setDealer();
 
         while(mitSpieler.size() > 1){
-            System.out.println("Mehr als 2 Spieler");
+//            System.out.println("Mehr als 2 Spieler");
 
-            nextDealer();
+//            nextDealer();
+            //Wer ist Small und BigBlind?
             setSmallBlindSpielerIndex();
             setBigBlindSpielerIndex();
 
-            //SmallBlind wird hinzugefügt
-            if(mitSpieler.get(smallBlindSpielerIndex).wieVielGeld() < getSmallBlindValue()){
-                long allInValue = mitSpieler.get(smallBlindSpielerIndex).wieVielGeld();
-                mitSpieler.get(smallBlindSpielerIndex).setAllInZuIstAllIn();                                                   //Spieler wird All-in gesetzt
-                mitSpieler.get(smallBlindSpielerIndex).verliereGeld(allInValue);                                               //All-in Betrag wird dem Spieler abgezogen
-                pod = pod + allInValue;                                                                                 //All-in Betrag wird dem Pod hinzugefügt
-                System.out.println(mitSpieler.get(smallBlindSpielerIndex).getSpielerName() + " ist All-in mit: " + allInValue);
-            }else{
-                mitSpieler.get(smallBlindSpielerIndex).verliereGeld(getSmallBlindValue());
-                pod = pod + getSmallBlindValue();
-            }
+            //SmallBlindValue wird gelegt
+            gibSmallBlind();
 
-            //BigBlind wird hinzugefügt
-            if(mitSpieler.get(bigBlindSpielerIndex).wieVielGeld() < getSmallBlindValue()){
-                long allInValue = 2 * mitSpieler.get(bigBlindSpielerIndex).wieVielGeld();
-                mitSpieler.get(bigBlindSpielerIndex).setAllInZuIstAllIn();                                                     //Spieler wird All-in gesetzt
-                mitSpieler.get(bigBlindSpielerIndex).verliereGeld(allInValue);                                                 //All-in Betrag wird dem Spieler abgezogen
-                pod = pod + allInValue;                                                                                 //All-in Betrag wird dem Pod hinzugefügt
-                System.out.println(mitSpieler.get(bigBlindSpielerIndex).getSpielerName() + " ist All-in mit: " + allInValue);
-            }else{
-                mitSpieler.get(bigBlindSpielerIndex).verliereGeld(2 * getSmallBlindValue());
-                pod = pod + (2 * getSmallBlindValue());
-            }
-            gebeSpielerKarten();
+            //BigBlindValue wird gelegt
+            gibBigBlind();
+
+            gibSpielerKarten();
+
 
 
         }
@@ -170,6 +155,32 @@ public class Tisch implements Runnable{
     public long getStartGeld(){
         return startGeld;
     }
+    //------------------------------------------------------------------------------------------------------------------
+    public void gibSmallBlind(){
+        if(mitSpieler.get(smallBlindSpielerIndex).wieVielGeld() < getSmallBlindValue()){
+            long allInValue = mitSpieler.get(smallBlindSpielerIndex).wieVielGeld();
+            mitSpieler.get(smallBlindSpielerIndex).setAllInZuIstAllIn();                                                   //Spieler wird All-in gesetzt
+            mitSpieler.get(smallBlindSpielerIndex).verliereGeld(allInValue);                                               //All-in Betrag wird dem Spieler abgezogen
+            pod = pod + allInValue;                                                                                 //All-in Betrag wird dem Pod hinzugefügt
+            System.out.println(mitSpieler.get(smallBlindSpielerIndex).getSpielerName() + " ist All-in mit: " + allInValue);
+        }else{
+            mitSpieler.get(smallBlindSpielerIndex).verliereGeld(getSmallBlindValue());
+            pod = pod + getSmallBlindValue();
+        }
+    }
+    //------------------------------------------------------------------------------------------------------------------
+    public void gibBigBlind(){
+        if(mitSpieler.get(bigBlindSpielerIndex).wieVielGeld() < getSmallBlindValue()){
+            long allInValue = 2 * mitSpieler.get(bigBlindSpielerIndex).wieVielGeld();
+            mitSpieler.get(bigBlindSpielerIndex).setAllInZuIstAllIn();                                                     //Spieler wird All-in gesetzt
+            mitSpieler.get(bigBlindSpielerIndex).verliereGeld(allInValue);                                                 //All-in Betrag wird dem Spieler abgezogen
+            pod = pod + allInValue;                                                                                 //All-in Betrag wird dem Pod hinzugefügt
+            System.out.println(mitSpieler.get(bigBlindSpielerIndex).getSpielerName() + " ist All-in mit: " + allInValue);
+        }else{
+            mitSpieler.get(bigBlindSpielerIndex).verliereGeld(2 * getSmallBlindValue());
+            pod = pod + (2 * getSmallBlindValue());
+        }
+    }
     //ENDE_GELD#########################################################################################################
 
     //BLINDS############################################################################################################
@@ -187,7 +198,7 @@ public class Tisch implements Runnable{
     //ENDE_BLINDS#######################################################################################################
 
     //KARTEN############################################################################################################
-    public void gebeSpielerKarten (){
+    public void gibSpielerKarten(){
         for(Spieler i:mitSpieler) {
             for(int j=0; j < 2; j++)
                 i.bekommeKarte(KartenDeck.getKarte());
