@@ -61,8 +61,11 @@ public class Tisch implements Runnable{
 
             gibSpielerKarten();
 
+            currentSpielerIndex = bigBlindSpielerIndex + 1;
 
+            while(true){
 
+            }
         }
         System.out.println("Spieler " + mitSpieler.get(0).getSpielerName() + " gewinnt");
 //		//what ever
