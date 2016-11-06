@@ -1,7 +1,7 @@
 package Pokern;
 import java.util.ArrayList;
 
-public class Spieler {
+public class Spieler{
 	String name;
 	long geld;
 	boolean isAllIn = false;
