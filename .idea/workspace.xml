@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="194e53a0-cd27-4447-b537-3a2d4c322ddf" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Pokern/Spieler.java" afterPath="$PROJECT_DIR$/src/Pokern/Spieler.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Pokern/Tisch.java" afterPath="$PROJECT_DIR$/src/Pokern/Tisch.java" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -36,9 +37,12 @@
       <file leaf-file-name="Spieler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Pokern/Spieler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
-              <folding />
+            <state relative-caret-position="129">
+              <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#spielerAktionRundeEins#0;class#Spieler#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -58,7 +62,7 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Pokern/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="553">
+            <state relative-caret-position="828">
               <caret line="46" column="2" selection-start-line="46" selection-start-column="2" selection-end-line="46" selection-end-column="2" />
               <folding />
             </state>
@@ -68,14 +72,17 @@
       <file leaf-file-name="Tisch.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Pokern/Tisch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+            <state relative-caret-position="145">
+              <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
               <folding>
+                <element signature="method#nextDealer#0;class#Tisch#0" expanded="false" />
+                <element signature="method#setSmallBlindSpielerIndex#0;class#Tisch#0" expanded="false" />
                 <element signature="method#setBigBlindSpielerIndex#0;class#Tisch#0" expanded="false" />
                 <element signature="method#gibSpielerStartGeld#0;class#Tisch#0" expanded="false" />
                 <element signature="method#gibSmallBlind#0;class#Tisch#0" expanded="false" />
                 <element signature="method#gibBigBlind#0;class#Tisch#0" expanded="false" />
                 <element signature="method#setNextSmallBlind#0;class#Tisch#0" expanded="false" />
+                <element signature="method#gibSpielerKarten#0;class#Tisch#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -85,6 +92,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <push-targets>
       <push-target-info repo="$PROJECT_DIR$" source="master" target-remote="origin" target-branch="Jonnys" />
     </push-targets>
@@ -135,7 +147,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -188,8 +200,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -200,7 +212,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RunManager" selected="Application.Main">
@@ -509,6 +521,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="194e53a0-cd27-4447-b537-3a2d4c322ddf" name="Default" comment="" />
@@ -545,7 +560,14 @@
       <option name="project" value="LOCAL" />
       <updated>1478433338283</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fdztgh">
+      <created>1478433501079</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1478433501079</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -598,7 +620,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="fdztgh" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="5" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -606,10 +630,39 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Pokern/Karte.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Pokern/Spieler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#spielerAktionRundeEins#0;class#Spieler#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pokern/KartenDeck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="17" column="64" selection-start-line="17" selection-start-column="64" selection-end-line="17" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pokern/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="46" column="2" selection-start-line="46" selection-start-column="2" selection-end-line="46" selection-end-column="2" />
           <folding />
         </state>
       </provider>
@@ -619,11 +672,42 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="method#nextDealer#0;class#Tisch#0" expanded="false" />
+            <element signature="method#setSmallBlindSpielerIndex#0;class#Tisch#0" expanded="false" />
             <element signature="method#setBigBlindSpielerIndex#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibSpielerStartGeld#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibSmallBlind#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibBigBlind#0;class#Tisch#0" expanded="false" />
             <element signature="method#setNextSmallBlind#0;class#Tisch#0" expanded="false" />
+            <element signature="method#gibSpielerKarten#0;class#Tisch#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pokern/Spieler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#spielerAktionRundeEins#0;class#Spieler#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pokern/Tisch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#nextDealer#0;class#Tisch#0" expanded="false" />
+            <element signature="method#setSmallBlindSpielerIndex#0;class#Tisch#0" expanded="false" />
+            <element signature="method#setBigBlindSpielerIndex#0;class#Tisch#0" expanded="false" />
+            <element signature="method#gibSpielerStartGeld#0;class#Tisch#0" expanded="false" />
+            <element signature="method#gibSmallBlind#0;class#Tisch#0" expanded="false" />
+            <element signature="method#gibBigBlind#0;class#Tisch#0" expanded="false" />
+            <element signature="method#setNextSmallBlind#0;class#Tisch#0" expanded="false" />
+            <element signature="method#gibSpielerKarten#0;class#Tisch#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -658,7 +742,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
           <caret line="49" column="120" selection-start-line="49" selection-start-column="120" selection-end-line="49" selection-end-column="120" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#spielerAktionRundeEins#0;class#Spieler#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -667,11 +754,14 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="method#nextDealer#0;class#Tisch#0" expanded="false" />
+            <element signature="method#setSmallBlindSpielerIndex#0;class#Tisch#0" expanded="false" />
             <element signature="method#setBigBlindSpielerIndex#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibSpielerStartGeld#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibSmallBlind#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibBigBlind#0;class#Tisch#0" expanded="false" />
             <element signature="method#setNextSmallBlind#0;class#Tisch#0" expanded="false" />
+            <element signature="method#gibSpielerKarten#0;class#Tisch#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -698,7 +788,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
           <caret line="49" column="120" selection-start-line="49" selection-start-column="120" selection-end-line="49" selection-end-column="120" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#spielerAktionRundeEins#0;class#Spieler#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -707,11 +800,14 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="method#nextDealer#0;class#Tisch#0" expanded="false" />
+            <element signature="method#setSmallBlindSpielerIndex#0;class#Tisch#0" expanded="false" />
             <element signature="method#setBigBlindSpielerIndex#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibSpielerStartGeld#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibSmallBlind#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibBigBlind#0;class#Tisch#0" expanded="false" />
             <element signature="method#setNextSmallBlind#0;class#Tisch#0" expanded="false" />
+            <element signature="method#gibSpielerKarten#0;class#Tisch#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -738,7 +834,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="833">
           <caret line="49" column="120" selection-start-line="49" selection-start-column="120" selection-end-line="49" selection-end-column="120" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#spielerAktionRundeEins#0;class#Spieler#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -747,11 +846,14 @@
         <state relative-caret-position="1207">
           <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
           <folding>
+            <element signature="method#nextDealer#0;class#Tisch#0" expanded="false" />
+            <element signature="method#setSmallBlindSpielerIndex#0;class#Tisch#0" expanded="false" />
             <element signature="method#setBigBlindSpielerIndex#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibSpielerStartGeld#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibSmallBlind#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibBigBlind#0;class#Tisch#0" expanded="false" />
             <element signature="method#setNextSmallBlind#0;class#Tisch#0" expanded="false" />
+            <element signature="method#gibSpielerKarten#0;class#Tisch#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -778,7 +880,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#spielerAktionRundeEins#0;class#Spieler#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -787,11 +892,14 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="method#nextDealer#0;class#Tisch#0" expanded="false" />
+            <element signature="method#setSmallBlindSpielerIndex#0;class#Tisch#0" expanded="false" />
             <element signature="method#setBigBlindSpielerIndex#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibSpielerStartGeld#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibSmallBlind#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibBigBlind#0;class#Tisch#0" expanded="false" />
             <element signature="method#setNextSmallBlind#0;class#Tisch#0" expanded="false" />
+            <element signature="method#gibSpielerKarten#0;class#Tisch#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -808,7 +916,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#spielerAktionRundeEins#0;class#Spieler#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -842,11 +953,14 @@
         <state relative-caret-position="51">
           <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
           <folding>
+            <element signature="method#nextDealer#0;class#Tisch#0" expanded="false" />
+            <element signature="method#setSmallBlindSpielerIndex#0;class#Tisch#0" expanded="false" />
             <element signature="method#setBigBlindSpielerIndex#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibSpielerStartGeld#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibSmallBlind#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibBigBlind#0;class#Tisch#0" expanded="false" />
             <element signature="method#setNextSmallBlind#0;class#Tisch#0" expanded="false" />
+            <element signature="method#gibSpielerKarten#0;class#Tisch#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -855,7 +969,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#spielerAktionRundeEins#0;class#Spieler#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -889,12 +1006,23 @@
         <state relative-caret-position="54">
           <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
           <folding>
+            <element signature="method#nextDealer#0;class#Tisch#0" expanded="false" />
+            <element signature="method#setSmallBlindSpielerIndex#0;class#Tisch#0" expanded="false" />
             <element signature="method#setBigBlindSpielerIndex#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibSpielerStartGeld#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibSmallBlind#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibBigBlind#0;class#Tisch#0" expanded="false" />
             <element signature="method#setNextSmallBlind#0;class#Tisch#0" expanded="false" />
+            <element signature="method#gibSpielerKarten#0;class#Tisch#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pokern/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="46" column="2" selection-start-line="46" selection-start-column="2" selection-end-line="46" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -916,32 +1044,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Pokern/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="46" column="2" selection-start-line="46" selection-start-column="2" selection-end-line="46" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Pokern/Spieler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
-          <folding />
+        <state relative-caret-position="129">
+          <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#spielerAktionRundeEins#0;class#Spieler#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Pokern/Tisch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+        <state relative-caret-position="145">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
           <folding>
+            <element signature="method#nextDealer#0;class#Tisch#0" expanded="false" />
+            <element signature="method#setSmallBlindSpielerIndex#0;class#Tisch#0" expanded="false" />
             <element signature="method#setBigBlindSpielerIndex#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibSpielerStartGeld#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibSmallBlind#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibBigBlind#0;class#Tisch#0" expanded="false" />
             <element signature="method#setNextSmallBlind#0;class#Tisch#0" expanded="false" />
+            <element signature="method#gibSpielerKarten#0;class#Tisch#0" expanded="false" />
           </folding>
         </state>
       </provider>

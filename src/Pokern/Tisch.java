@@ -61,11 +61,9 @@ public class Tisch implements Runnable{
 
             gibSpielerKarten();
 
-            currentSpielerIndex = bigBlindSpielerIndex + 1;
 
-            while(true){
 
-            }
+
         }
         System.out.println("Spieler " + mitSpieler.get(0).getSpielerName() + " gewinnt");
 //		//what ever
@@ -100,8 +98,6 @@ public class Tisch implements Runnable{
         return mitSpieler.get(dealerSpielerIndex);
     }
     //ENDE_DEALER#######################################################################################################
-
-
 
     //Spieler###########################################################################################################
     public Spieler nextSpieler(){
@@ -183,6 +179,10 @@ public class Tisch implements Runnable{
             mitSpieler.get(bigBlindSpielerIndex).verliereGeld(2 * getSmallBlindValue());
             pod = pod + (2 * getSmallBlindValue());
         }
+    }
+    //------------------------------------------------------------------------------------------------------------------
+    public void gibRaiseOrCall(long i){
+        this.pod += i;
     }
     //ENDE_GELD#########################################################################################################
 
