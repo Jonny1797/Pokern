@@ -1,15 +1,16 @@
 package Pokern;
 import java.util.ArrayList;
+import java.util.Scanner;
 
-public class Spieler {
+public class Spieler{
 	String name;
 	long geld;
 	boolean isAllIn = false;
 	ArrayList<Karte> handKarten = new ArrayList<>();
 
-	public Spieler(String Name/*, long Geld*/){
+	public Spieler(String Name/*, long geld*/){
 		this.name = Name;
-		//this.geld = Geld;
+		//this.geld = geld;
 	}
 	public Spieler(){}
 
@@ -22,6 +23,28 @@ public class Spieler {
 	//SPIELER###########################################################################################################
 	public String getSpielerName(){
 		return name;
+	}
+	//spieler--------------------------------------------------------------------------------------------------------------
+	public int spielerWahlRundeEins(){
+		while(true) {
+			System.out.println("Wählen Sie zwischen folgenden Aktionen:");
+			System.out.println("1: Call");
+			System.out.println("2: Fold");
+			System.out.println("3: Raise");
+			Scanner s = new Scanner(System.in);
+			int i = s.nextInt();
+			switch (i) {
+				case 1:
+					return 0;
+				case 2:
+					return -1;
+				case 3:
+					return 1;
+				default:
+					System.out.println("Ungültige Eingabe.");
+					break;
+			}
+		}
 	}
 	//ENDE_SPIELER######################################################################################################
 
@@ -37,6 +60,8 @@ public class Spieler {
 	public void verliereGeld(long Verlust){
 		geld = geld - Verlust;
 	}
+	//geld--------------------------------------------------------------------------------------------------------------
+
 	//geld--------------------------------------------------------------------------------------------------------------
 	public long wieVielGeld(){
 		return geld;
