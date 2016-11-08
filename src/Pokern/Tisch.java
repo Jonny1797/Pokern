@@ -46,12 +46,10 @@ public class Tisch implements Runnable{
         setDealer();
 
         while(mitSpieler.size() > 1){
-//            System.out.println("Mehr als 2 Spieler");
-
-//            nextDealer();
-            //Wer ist Small und BigBlind?
+            //Wer ist Small und BigBlind und wer ist an der Reihe?
             setSmallBlindSpielerIndex();
             setBigBlindSpielerIndex();
+            currentSpielerIndex = nextSpieler(bigBlindSpielerIndex);
 
             //SmallBlindValue wird gelegt
             gibSmallBlind();
@@ -61,8 +59,12 @@ public class Tisch implements Runnable{
 
             gibSpielerKarten();
 
-
-
+            switch (getCurrentSpieler().spielerWahlRundeEins()){
+                case -1: break;
+                case 0: break;
+                case 1: break;
+                default: break;
+            }
 
         }
         System.out.println("Spieler " + mitSpieler.get(0).getSpielerName() + " gewinnt");
@@ -88,10 +90,7 @@ public class Tisch implements Runnable{
     }
     //dealer------------------------------------------------------------------------------------------------------------
     public void nextDealer(){
-        dealerSpielerIndex++;
-        if(dealerSpielerIndex >= mitSpieler.size()){
-            dealerSpielerIndex = 0;
-        }
+        dealerSpielerIndex = nextSpieler(dealerSpielerIndex);
     }
     //dealer------------------------------------------------------------------------------------------------------------
     public Spieler getDealer(){
@@ -100,9 +99,12 @@ public class Tisch implements Runnable{
     //ENDE_DEALER#######################################################################################################
 
     //Spieler###########################################################################################################
-    public Spieler nextSpieler(){
-        currentSpielerIndex++;
-        return mitSpieler.get(currentSpielerIndex);
+    public int nextSpieler(int i){
+        i  += 1;
+        if(i >= mitSpieler.size()){
+            i = i - mitSpieler.size();
+        }
+        return i;
     }
     //spieler-----------------------------------------------------------------------------------------------------------
     public void fuegeSpielerHinzu(Spieler s){
@@ -119,10 +121,7 @@ public class Tisch implements Runnable{
     //spieler-----------------------------------------------------------------------------------------------------------
     public void setSmallBlindSpielerIndex(){
         if(mitSpieler.size() > 2){
-            smallBlindSpielerIndex = dealerSpielerIndex + 1;
-            if(smallBlindSpielerIndex >= mitSpieler.size()){
-                smallBlindSpielerIndex = smallBlindSpielerIndex - mitSpieler.size();
-            }
+            smallBlindSpielerIndex = nextSpieler(dealerSpielerIndex);
         }else{
             smallBlindSpielerIndex = dealerSpielerIndex;
         }
@@ -130,10 +129,7 @@ public class Tisch implements Runnable{
     //spieler-----------------------------------------------------------------------------------------------------------
     public void setBigBlindSpielerIndex(){
         if(mitSpieler.size() > 2){
-            bigBlindSpielerIndex = dealerSpielerIndex + 2;
-            if(bigBlindSpielerIndex >= mitSpieler.size()){
-                bigBlindSpielerIndex = bigBlindSpielerIndex - mitSpieler.size();
-            }
+            bigBlindSpielerIndex = nextSpieler(nextSpieler(dealerSpielerIndex));
         }else{
             if(dealerSpielerIndex == 0){
                 bigBlindSpielerIndex = 1;
@@ -141,6 +137,10 @@ public class Tisch implements Runnable{
                 bigBlindSpielerIndex = 0;
             }
         }
+    }
+    //spieler-----------------------------------------------------------------------------------------------------------
+    public Spieler getCurrentSpieler(){
+        return mitSpieler.get(currentSpielerIndex);
     }
     //END_SPIELER#######################################################################################################
 

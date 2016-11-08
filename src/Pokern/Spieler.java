@@ -25,7 +25,7 @@ public class Spieler{
 		return name;
 	}
 	//spieler--------------------------------------------------------------------------------------------------------------
-	public long spielerAktionRundeEins(){
+	public int spielerWahlRundeEins(){
 		while(true) {
 			System.out.println("Wählen Sie zwischen folgenden Aktionen:");
 			System.out.println("1: Call");
@@ -39,8 +39,7 @@ public class Spieler{
 				case 2:
 					return -1;
 				case 3:
-					System.out.println("Um wieviel möchtest du erhöhen?");
-					return s.nextLong();
+					return 1;
 				default:
 					System.out.println("Ungültige Eingabe.");
 					break;
@@ -61,6 +60,8 @@ public class Spieler{
 	public void verliereGeld(long Verlust){
 		geld = geld - Verlust;
 	}
+	//geld--------------------------------------------------------------------------------------------------------------
+
 	//geld--------------------------------------------------------------------------------------------------------------
 	public long wieVielGeld(){
 		return geld;
