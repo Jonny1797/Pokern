@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="194e53a0-cd27-4447-b537-3a2d4c322ddf" name="Default" comment="">
+    <list default="true" id="194e53a0-cd27-4447-b537-3a2d4c322ddf" name="Default" comment="Ganz viel schöne Sachen gemacht!">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pokern.iml" afterPath="$PROJECT_DIR$/Pokern.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Pokern/Spieler.java" afterPath="$PROJECT_DIR$/src/Pokern/Spieler.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Pokern/Tisch.java" afterPath="$PROJECT_DIR$/src/Pokern/Tisch.java" />
     </list>
@@ -23,75 +24,93 @@
     <favorites_list name="Pokern" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Karte.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Pokern/Karte.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-              <folding>
-                <element signature="e#299#300#0" expanded="false" />
-                <element signature="e#318#319#0" expanded="false" />
-                <element signature="e#358#359#0" expanded="false" />
-                <element signature="e#378#379#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Spieler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Pokern/Spieler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#spielerWahlRundeEins#0;class#Spieler#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="KartenDeck.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Pokern/KartenDeck.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="17" column="64" selection-start-line="17" selection-start-column="64" selection-end-line="17" selection-end-column="64" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Pokern/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="553">
-              <caret line="46" column="2" selection-start-line="46" selection-start-column="2" selection-end-line="46" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Tisch.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Pokern/Tisch.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="64" column="24" selection-start-line="64" selection-start-column="24" selection-end-line="64" selection-end-column="24" />
-              <folding>
-                <element signature="method#nextSpieler#0;class#Tisch#0" expanded="false" />
-                <element signature="method#setSmallBlindSpielerIndex#0;class#Tisch#0" expanded="false" />
-                <element signature="method#setBigBlindSpielerIndex#0;class#Tisch#0" expanded="false" />
-                <element signature="method#gibSpielerStartGeld#0;class#Tisch#0" expanded="false" />
-                <element signature="method#gibSmallBlind#0;class#Tisch#0" expanded="false" />
-                <element signature="method#gibBigBlind#0;class#Tisch#0" expanded="false" />
-                <element signature="method#setNextSmallBlind#0;class#Tisch#0" expanded="false" />
-                <element signature="method#gibSpielerKarten#0;class#Tisch#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5328152">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="Karte.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Pokern/Karte.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="54">
+                  <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Spieler.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Pokern/Spieler.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="594">
+                  <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="method#spielerWahlRundeEins#0;class#Spieler#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="KartenDeck.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Pokern/KartenDeck.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="288">
+                  <caret line="17" column="64" selection-start-line="17" selection-start-column="64" selection-end-line="17" selection-end-column="64" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Pokern/Main.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="828">
+                  <caret line="46" column="2" selection-start-line="46" selection-start-column="2" selection-end-line="46" selection-end-column="2" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Tisch.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/Pokern/Tisch.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="601">
+                  <caret line="79" column="55" selection-start-line="79" selection-start-column="55" selection-end-line="79" selection-end-column="55" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="method#nextSpieler#0;class#Tisch#0" expanded="false" />
+                    <element signature="method#setSmallBlindSpielerIndex#0;class#Tisch#0" expanded="false" />
+                    <element signature="method#setBigBlindSpielerIndex#0;class#Tisch#0" expanded="false" />
+                    <element signature="method#gibSpielerStartGeld#0;class#Tisch#0" expanded="false" />
+                    <element signature="method#gibSmallBlind#0;class#Tisch#0" expanded="false" />
+                    <element signature="method#gibBigBlind#0;class#Tisch#0" expanded="false" />
+                    <element signature="method#raiseWieViel#0;class#Tisch#0" expanded="false" />
+                    <element signature="method#setNextSmallBlind#0;class#Tisch#0" expanded="false" />
+                    <element signature="method#gibSpielerKarten#0;class#Tisch#0" expanded="false" />
+                    <element signature="method#legalRaise#0;class#Tisch#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="Spieler.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/Pokern/Spieler.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="576">
+                  <caret line="56" column="8" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="8" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -115,15 +134,83 @@
         <option value="$PROJECT_DIR$/src/Pokern/Karte.java" />
         <option value="$PROJECT_DIR$/src/Pokern/Main.java" />
         <option value="$PROJECT_DIR$/src/Pokern/KartenDeck.java" />
-        <option value="$PROJECT_DIR$/src/Pokern/Tisch.java" />
         <option value="$PROJECT_DIR$/src/Pokern/Spieler.java" />
+        <option value="$PROJECT_DIR$/src/Pokern/Tisch.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="53" />
     <option name="y" value="24" />
-    <option name="width" value="1366" />
+    <option name="width" value="1313" />
     <option name="height" value="744" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Abstraction issuesJava</id>
+          </State>
+          <State>
+            <id>Android</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Correctness</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Internationalization &gt; Bidirectional Text</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Performance</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Security</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Usability</id>
+          </State>
+          <State>
+            <id>Android Lint for Kotlin</id>
+          </State>
+          <State>
+            <id>Code maturity issuesJava</id>
+          </State>
+          <State>
+            <id>Declaration redundancyJava</id>
+          </State>
+          <State>
+            <id>Groovy</id>
+          </State>
+          <State>
+            <id>Internationalization issuesJava</id>
+          </State>
+          <State>
+            <id>JUnit issuesJava</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsGroovy</id>
+          </State>
+          <State>
+            <id>XML</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Android</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -150,8 +237,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -170,52 +255,22 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pokern" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pokern" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pokern" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pokern" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pokern" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/HandChecker.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../HandChecker.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RunManager" selected="Application.Main">
@@ -577,11 +632,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478538678293</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Ganz viel schöne Sachen gemacht!">
+      <created>1478598806999</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1478598806999</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1366" height="744" extended-state="6" />
+    <frame x="53" y="24" width="1313" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -591,11 +653,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884902" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20454545" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11805027" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -632,7 +694,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="7" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -645,12 +707,62 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pokern/Spieler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
           <folding>
-            <element signature="e#299#300#0" expanded="false" />
-            <element signature="e#318#319#0" expanded="false" />
-            <element signature="e#358#359#0" expanded="false" />
-            <element signature="e#378#379#0" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#spielerWahlRundeEins#0;class#Spieler#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pokern/KartenDeck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="17" column="64" selection-start-line="17" selection-start-column="64" selection-end-line="17" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pokern/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="46" column="2" selection-start-line="46" selection-start-column="2" selection-end-line="46" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pokern/Tisch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#nextSpieler#0;class#Tisch#0" expanded="false" />
+            <element signature="method#setSmallBlindSpielerIndex#0;class#Tisch#0" expanded="false" />
+            <element signature="method#setBigBlindSpielerIndex#0;class#Tisch#0" expanded="false" />
+            <element signature="method#gibSpielerStartGeld#0;class#Tisch#0" expanded="false" />
+            <element signature="method#gibSmallBlind#0;class#Tisch#0" expanded="false" />
+            <element signature="method#gibBigBlind#0;class#Tisch#0" expanded="false" />
+            <element signature="method#raiseWieViel#0;class#Tisch#0" expanded="false" />
+            <element signature="method#setNextSmallBlind#0;class#Tisch#0" expanded="false" />
+            <element signature="method#gibSpielerKarten#0;class#Tisch#0" expanded="false" />
+            <element signature="method#legalRaise#0;class#Tisch#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pokern/Karte.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -686,14 +798,17 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#nextSpieler#0;class#Tisch#0" expanded="false" />
             <element signature="method#setSmallBlindSpielerIndex#0;class#Tisch#0" expanded="false" />
             <element signature="method#setBigBlindSpielerIndex#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibSpielerStartGeld#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibSmallBlind#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibBigBlind#0;class#Tisch#0" expanded="false" />
+            <element signature="method#raiseWieViel#0;class#Tisch#0" expanded="false" />
             <element signature="method#setNextSmallBlind#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibSpielerKarten#0;class#Tisch#0" expanded="false" />
+            <element signature="method#legalRaise#0;class#Tisch#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -702,12 +817,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding>
-            <element signature="e#299#300#0" expanded="false" />
-            <element signature="e#318#319#0" expanded="false" />
-            <element signature="e#358#359#0" expanded="false" />
-            <element signature="e#378#379#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -743,14 +853,17 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#nextSpieler#0;class#Tisch#0" expanded="false" />
             <element signature="method#setSmallBlindSpielerIndex#0;class#Tisch#0" expanded="false" />
             <element signature="method#setBigBlindSpielerIndex#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibSpielerStartGeld#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibSmallBlind#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibBigBlind#0;class#Tisch#0" expanded="false" />
+            <element signature="method#raiseWieViel#0;class#Tisch#0" expanded="false" />
             <element signature="method#setNextSmallBlind#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibSpielerKarten#0;class#Tisch#0" expanded="false" />
+            <element signature="method#legalRaise#0;class#Tisch#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -771,14 +884,17 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#nextSpieler#0;class#Tisch#0" expanded="false" />
             <element signature="method#setSmallBlindSpielerIndex#0;class#Tisch#0" expanded="false" />
             <element signature="method#setBigBlindSpielerIndex#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibSpielerStartGeld#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibSmallBlind#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibBigBlind#0;class#Tisch#0" expanded="false" />
+            <element signature="method#raiseWieViel#0;class#Tisch#0" expanded="false" />
             <element signature="method#setNextSmallBlind#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibSpielerKarten#0;class#Tisch#0" expanded="false" />
+            <element signature="method#legalRaise#0;class#Tisch#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -787,12 +903,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding>
-            <element signature="e#299#300#0" expanded="false" />
-            <element signature="e#318#319#0" expanded="false" />
-            <element signature="e#358#359#0" expanded="false" />
-            <element signature="e#378#379#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -828,14 +939,17 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#nextSpieler#0;class#Tisch#0" expanded="false" />
             <element signature="method#setSmallBlindSpielerIndex#0;class#Tisch#0" expanded="false" />
             <element signature="method#setBigBlindSpielerIndex#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibSpielerStartGeld#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibSmallBlind#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibBigBlind#0;class#Tisch#0" expanded="false" />
+            <element signature="method#raiseWieViel#0;class#Tisch#0" expanded="false" />
             <element signature="method#setNextSmallBlind#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibSpielerKarten#0;class#Tisch#0" expanded="false" />
+            <element signature="method#legalRaise#0;class#Tisch#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -872,14 +986,17 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#nextSpieler#0;class#Tisch#0" expanded="false" />
             <element signature="method#setSmallBlindSpielerIndex#0;class#Tisch#0" expanded="false" />
             <element signature="method#setBigBlindSpielerIndex#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibSpielerStartGeld#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibSmallBlind#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibBigBlind#0;class#Tisch#0" expanded="false" />
+            <element signature="method#raiseWieViel#0;class#Tisch#0" expanded="false" />
             <element signature="method#setNextSmallBlind#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibSpielerKarten#0;class#Tisch#0" expanded="false" />
+            <element signature="method#legalRaise#0;class#Tisch#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -916,14 +1033,17 @@
         <state relative-caret-position="1207">
           <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#nextSpieler#0;class#Tisch#0" expanded="false" />
             <element signature="method#setSmallBlindSpielerIndex#0;class#Tisch#0" expanded="false" />
             <element signature="method#setBigBlindSpielerIndex#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibSpielerStartGeld#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibSmallBlind#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibBigBlind#0;class#Tisch#0" expanded="false" />
+            <element signature="method#raiseWieViel#0;class#Tisch#0" expanded="false" />
             <element signature="method#setNextSmallBlind#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibSpielerKarten#0;class#Tisch#0" expanded="false" />
+            <element signature="method#legalRaise#0;class#Tisch#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -960,14 +1080,17 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#nextSpieler#0;class#Tisch#0" expanded="false" />
             <element signature="method#setSmallBlindSpielerIndex#0;class#Tisch#0" expanded="false" />
             <element signature="method#setBigBlindSpielerIndex#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibSpielerStartGeld#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibSmallBlind#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibBigBlind#0;class#Tisch#0" expanded="false" />
+            <element signature="method#raiseWieViel#0;class#Tisch#0" expanded="false" />
             <element signature="method#setNextSmallBlind#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibSpielerKarten#0;class#Tisch#0" expanded="false" />
+            <element signature="method#legalRaise#0;class#Tisch#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1019,14 +1142,17 @@
         <state relative-caret-position="51">
           <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#nextSpieler#0;class#Tisch#0" expanded="false" />
             <element signature="method#setSmallBlindSpielerIndex#0;class#Tisch#0" expanded="false" />
             <element signature="method#setBigBlindSpielerIndex#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibSpielerStartGeld#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibSmallBlind#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibBigBlind#0;class#Tisch#0" expanded="false" />
+            <element signature="method#raiseWieViel#0;class#Tisch#0" expanded="false" />
             <element signature="method#setNextSmallBlind#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibSpielerKarten#0;class#Tisch#0" expanded="false" />
+            <element signature="method#legalRaise#0;class#Tisch#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1070,15 +1196,27 @@
         <state relative-caret-position="54">
           <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#nextSpieler#0;class#Tisch#0" expanded="false" />
             <element signature="method#setSmallBlindSpielerIndex#0;class#Tisch#0" expanded="false" />
             <element signature="method#setBigBlindSpielerIndex#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibSpielerStartGeld#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibSmallBlind#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibBigBlind#0;class#Tisch#0" expanded="false" />
+            <element signature="method#raiseWieViel#0;class#Tisch#0" expanded="false" />
             <element signature="method#setNextSmallBlind#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibSpielerKarten#0;class#Tisch#0" expanded="false" />
+            <element signature="method#legalRaise#0;class#Tisch#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Dropbox/Öffentlich/FortProgrammPrak/HandChecker.jar!/handChecker/PokerCard.class" />
+    <entry file="file://$PROJECT_DIR$/src/Pokern/Karte.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1090,22 +1228,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Pokern/Karte.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding>
-            <element signature="e#299#300#0" expanded="false" />
-            <element signature="e#318#319#0" expanded="false" />
-            <element signature="e#358#359#0" expanded="false" />
-            <element signature="e#378#379#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Pokern/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
+        <state relative-caret-position="828">
           <caret line="46" column="2" selection-start-line="46" selection-start-column="2" selection-end-line="46" selection-end-column="2" />
           <folding />
         </state>
@@ -1113,8 +1238,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Pokern/Spieler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+        <state relative-caret-position="594">
+          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#spielerWahlRundeEins#0;class#Spieler#0" expanded="false" />
@@ -1124,17 +1249,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Pokern/Tisch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="64" column="24" selection-start-line="64" selection-start-column="24" selection-end-line="64" selection-end-column="24" />
+        <state relative-caret-position="601">
+          <caret line="79" column="55" selection-start-line="79" selection-start-column="55" selection-end-line="79" selection-end-column="55" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#nextSpieler#0;class#Tisch#0" expanded="false" />
             <element signature="method#setSmallBlindSpielerIndex#0;class#Tisch#0" expanded="false" />
             <element signature="method#setBigBlindSpielerIndex#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibSpielerStartGeld#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibSmallBlind#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibBigBlind#0;class#Tisch#0" expanded="false" />
+            <element signature="method#raiseWieViel#0;class#Tisch#0" expanded="false" />
             <element signature="method#setNextSmallBlind#0;class#Tisch#0" expanded="false" />
             <element signature="method#gibSpielerKarten#0;class#Tisch#0" expanded="false" />
+            <element signature="method#legalRaise#0;class#Tisch#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1196,6 +1324,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -1215,7 +1344,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>HandChecker</last-edited>
+          <last-edited>HandChecker2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

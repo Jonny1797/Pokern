@@ -13,7 +13,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
+    <orderEntry type="inheritedJdk" />
     <orderEntry type="module-library" exported="">
       <library name="HandChecker.jar">
         <CLASSES>
@@ -23,7 +23,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="HandChecker1" level="project" />
     <orderEntry type="library" name="HandChecker" level="project" />
+    <orderEntry type="library" name="HandChecker2" level="project" />
   </component>
 </module>

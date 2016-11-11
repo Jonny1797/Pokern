@@ -1,6 +1,7 @@
 package Pokern;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Tisch implements Runnable{
     ArrayList<Spieler> mitSpieler = new ArrayList<>();
@@ -59,11 +60,17 @@ public class Tisch implements Runnable{
 
             gibSpielerKarten();
 
-            switch (getCurrentSpieler().spielerWahlRundeEins()){
-                case -1: break;
-                case 0: break;
-                case 1: break;
-                default: break;
+            while(true) {
+                switch (getCurrentSpieler().spielerWahlRundeEins()) {
+                    case -1:
+                        getCurrentSpieler().istDabei = false;
+                        break;
+                    case 0:
+                        break;
+                    case 1:
+                        gibRaiseOrCall(raiseWieViel());
+                        break;
+                }
             }
 
         }
@@ -115,7 +122,7 @@ public class Tisch implements Runnable{
         mitSpieler.remove(s);
     }
     //spieler-----------------------------------------------------------------------------------------------------------
-    public int wieVielerSpieler(){
+    public int wieVieleSpieler(){
         return mitSpieler.size();
     }
     //spieler-----------------------------------------------------------------------------------------------------------
@@ -181,6 +188,16 @@ public class Tisch implements Runnable{
         }
     }
     //------------------------------------------------------------------------------------------------------------------
+    public long raiseWieViel(){
+        long wert;
+        System.out.println("Um wie viel möchtest du raisen?");
+        Scanner s = new Scanner(System.in);
+        while(!legalRaise(wert=s.nextLong())){
+            System.out.println("Der Wert ist leider nicht zulässig. Wählen Sie ein Vielfaches von " + smallBlindList[smallBlindListIndex]*2 + " sein.");
+        }
+        return wert;
+    }
+    //------------------------------------------------------------------------------------------------------------------
     public void gibRaiseOrCall(long i){
         this.pod += i;
     }
@@ -208,4 +225,10 @@ public class Tisch implements Runnable{
         }
     }
     //ENDE_KARTEN#######################################################################################################
+
+    //PRÜFE#############################################################################################################
+    private boolean legalRaise(long raise){
+        return raise > smallBlindList[smallBlindListIndex] && smallBlindList[smallBlindListIndex] % raise == 0;
+    }
+    //PRÜFE_ENDE########################################################################################################
 }
