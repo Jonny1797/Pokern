@@ -4,7 +4,9 @@ import java.util.ArrayList;
 public class Spieler {
 	String name;
 	long geld;
+	long pod;
 	boolean isAllIn = false;
+	boolean isInDerRunde = true;
 	ArrayList<Karte> handKarten = new ArrayList<>();
 
 	public Spieler(String Name/*, long Geld*/){
@@ -56,4 +58,18 @@ public class Spieler {
 		return isAllIn;
 	}
 	//ENDE_ALLIN########################################################################################################
+
+	//IN_DER_RUNDE######################################################################################################
+	public void setIsInDerRundeZuFold(){
+		isInDerRunde = false
+	}
+	//isinderrunde------------------------------------------------------------------------------------------------------
+	public void setIsInDerRundeZuIstDabei(){
+		isInDerRunde = true;
+	}
+	//isinderrunde------------------------------------------------------------------------------------------------------
+	public boolean getIsInDerRunde(){
+		return isInDerRunde;
+	}
+	//ENDE_IN_DER_RUNDE#################################################################################################
 }
