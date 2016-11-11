@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="194e53a0-cd27-4447-b537-3a2d4c322ddf" name="Default" comment="Ganz viel schöne Sachen gemacht!">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pokern.iml" afterPath="$PROJECT_DIR$/Pokern.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Pokern/Spieler.java" afterPath="$PROJECT_DIR$/src/Pokern/Spieler.java" />
+    <list default="true" id="194e53a0-cd27-4447-b537-3a2d4c322ddf" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Pokern/Tisch.java" afterPath="$PROJECT_DIR$/src/Pokern/Tisch.java" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -24,7 +21,7 @@
     <favorites_list name="Pokern" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5328152">
+    <splitter split-orientation="horizontal" split-proportion="0.5639033">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="Karte.java" pinned="false" current-in-tab="false">
@@ -73,8 +70,8 @@
           <file leaf-file-name="Tisch.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Pokern/Tisch.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="601">
-                  <caret line="79" column="55" selection-start-line="79" selection-start-column="55" selection-end-line="79" selection-end-column="55" />
+                <state relative-caret-position="313">
+                  <caret line="69" column="27" selection-start-line="69" selection-start-column="27" selection-end-line="69" selection-end-column="27" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="method#nextSpieler#0;class#Tisch#0" expanded="false" />
@@ -99,7 +96,7 @@
           <file leaf-file-name="Spieler.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Pokern/Spieler.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="576">
+                <state relative-caret-position="900">
                   <caret line="56" column="8" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="8" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -121,6 +118,7 @@
     </option>
     <push-targets>
       <push-target-info repo="$PROJECT_DIR$" source="master" target-remote="origin" target-branch="Jonnys" />
+      <push-target-info repo="$PROJECT_DIR$" source="Jonnys" target-remote="origin" target-branch="Jons" />
     </push-targets>
   </component>
   <component name="GradleLocalSettings">
@@ -639,7 +637,14 @@
       <option name="project" value="LOCAL" />
       <updated>1478598806999</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Ganz viel schöne Sachen gemacht!">
+      <created>1478866912984</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1478866912984</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1249,8 +1254,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Pokern/Tisch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="601">
-          <caret line="79" column="55" selection-start-line="79" selection-start-column="55" selection-end-line="79" selection-end-column="55" />
+        <state relative-caret-position="313">
+          <caret line="69" column="27" selection-start-line="69" selection-start-column="27" selection-end-line="69" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#nextSpieler#0;class#Tisch#0" expanded="false" />

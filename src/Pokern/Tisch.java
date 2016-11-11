@@ -58,8 +58,10 @@ public class Tisch implements Runnable{
             //BigBlindValue wird gelegt
             gibBigBlind();
 
+            //Die Spieler bekommen Karten
             gibSpielerKarten();
 
+            //Wahlmöglichkeiten erste Runde
             while(true) {
                 switch (getCurrentSpieler().spielerWahlRundeEins()) {
                     case -1:
