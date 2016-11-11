@@ -6,12 +6,12 @@ public class Spieler{
 	String name;
 	long geld;
 	boolean isAllIn = false;
-	boolean istDabei;
+	boolean istDabei = true;
+	boolean raised = false;
 	ArrayList<Karte> handKarten = new ArrayList<>();
 
 	public Spieler(String Name/*, long geld*/){
 		this.name = Name;
-		this.istDabei = true;
 		//this.geld = geld;
 	}
 	public Spieler(){}

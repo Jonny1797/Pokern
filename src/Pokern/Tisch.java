@@ -62,17 +62,9 @@ public class Tisch implements Runnable{
             gibSpielerKarten();
 
             //Wahlmöglichkeiten erste Runde
-            while(true) {
-                switch (getCurrentSpieler().spielerWahlRundeEins()) {
-                    case -1:
-                        getCurrentSpieler().istDabei = false;
-                        break;
-                    case 0:
-                        break;
-                    case 1:
-                        gibRaiseOrCall(raiseWieViel());
-                        break;
-                }
+            while(!getCurrentSpieler().raised || currentSpielerIndex != bigBlindSpielerIndex +1){
+                rundeEins();
+                nextSpieler(currentSpielerIndex);
             }
 
         }
@@ -150,6 +142,27 @@ public class Tisch implements Runnable{
     //spieler-----------------------------------------------------------------------------------------------------------
     public Spieler getCurrentSpieler(){
         return mitSpieler.get(currentSpielerIndex);
+    }
+    //spieler-----------------------------------------------------------------------------------------------------------
+    public void rundeEins(){
+        boolean ende = false;
+        while(!ende) {
+            switch (getCurrentSpieler().spielerWahlRundeEins()) {
+                case -1:
+                    getCurrentSpieler().istDabei = false;
+                    ende = true;
+                    break;
+                case 0:
+                    if(mitSpieler.get(currentSpielerIndex-1).raised){
+                        break;
+                    }
+                    ende = true;
+                case 1:
+                    gibRaiseOrCall(raiseWieViel());
+                    ende = true;
+                    break;
+            }
+        }
     }
     //END_SPIELER#######################################################################################################
 
