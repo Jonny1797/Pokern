@@ -170,10 +170,31 @@ public class Tisch implements Runnable{
     public long getStartGeld(){
         return startGeld;
     }
+    //------------------------------------------------------------------------------------------------------------------
+    public void inDenPodEinzahlen(Spieler s, long geld){
+        s.addZumPod(geld);
+    }
+    //------------------------------------------------------------------------------------------------------------------
+    public void podAuszahlen(Spieler gewinner){
+        long hauptPodValue = gewinner.getPod();
+        ArrayList<Spieler> nebenPod = new ArrayList<>(0);
+        for(Spieler s:mitSpieler){
+            if(hauptPodValue > s.getPod()){
+                gewinner.bekommeGeld(s.getPod());
+                s.resetPod();
+            }else{
+                gewinner.bekommeGeld(hauptPodValue);
+                s.verminderePod(hauptPodValue);
+            }
+            if(s.getIsInDerRunde() && s.getPod() > 0){
+                nebenPod.add(s);
+            }
+        }
+    }
     //ENDE_GELD#########################################################################################################
 
     //BLINDS############################################################################################################
-    private int getSmallBlindValue(){
+    public int getSmallBlindValue(){
         return smallBlindList[smallBlindListIndex];
     }
     //blind-------------------------------------------------------------------------------------------------------------
